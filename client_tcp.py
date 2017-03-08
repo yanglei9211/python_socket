@@ -3,10 +3,12 @@
 
 import socket
 class TcpClient:
-    host="127.0.0.1"
-    port=8008
-    bufsiz=1024
-    addr=(host,port)
+
+    host = "127.0.0.1"
+    port = 8008
+    bufsiz = 1024
+    addr = (host, port)
+
     def __init__(self):
         self.client=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client.connect(self.addr)
